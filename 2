@@ -26,3 +26,10 @@ if int(total)%int(page_limit) == 0:
     print(int(total)//int(page_limit))
 else:
     print(int(total)//int(page_limit)+1)
+
+# 11/15일 날 다시 생각난 방법
+def board(m,n):
+    page = m // n
+    if m % n != 0:
+        page += 1
+    print(page)
